@@ -18,6 +18,8 @@ export default function PartnersPage() {
     <>
       <section className="relative min-h-[50vh] flex items-center bg-[var(--color-dark-section-deep)] overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-dark-section-deep)] via-[#1A1840] to-[#2D2A6B]" />
+        <img src="/CareerGuide Images/pexels-kawserhamid-176342.jpg" alt="" aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover opacity-20" style={{ mixBlendMode: 'overlay' }} />
         <div className="absolute inset-0 dot-grid" />
         <div className="absolute top-[-20%] right-[-10%] w-[500px] h-[500px] rounded-full opacity-15 animate-pulse-glow"
           style={{ background: 'radial-gradient(ellipse, #C8B8F5 0%, transparent 65%)' }} />
@@ -64,14 +66,14 @@ export default function PartnersPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
           <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-brand)] mb-3">Current Partners</p>
           <h2 className="text-2xl font-extrabold uppercase tracking-tight text-[var(--color-body)] mb-10">Organisations we work with</h2>
-          <div className="flex flex-wrap justify-center gap-4 items-center">
-            {['New City College Group', 'Circl', 'Partner', 'Partner'].map((name, i) => (
-              <div key={i} className="h-12 px-6 bg-white border border-[var(--color-border)] rounded-xl flex items-center justify-center text-sm font-semibold text-[var(--color-muted)] shadow-card">
-                {name}
-              </div>
-            ))}
+          <div className="flex flex-wrap justify-center gap-6 items-center">
+            <div className="h-14 px-8 bg-white border border-[var(--color-border)] rounded-xl flex items-center justify-center shadow-card">
+              <img src="/CareerGuide Images/New-City-College-Aramark.jpg" alt="New City College" className="h-8 w-auto object-contain" />
+            </div>
+            <div className="h-14 px-6 bg-white border border-[var(--color-border)] rounded-xl flex items-center justify-center shadow-card overflow-hidden">
+              <img src="/CareerGuide Images/Circl Programme Flyer.png" alt="Circl" className="h-10 w-auto object-contain" />
+            </div>
           </div>
-          <p className="text-xs text-[var(--color-muted)] mt-8">Partner logos coming soon</p>
         </div>
       </section>
 

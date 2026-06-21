@@ -25,6 +25,8 @@ export default function StudentsPage() {
     <>
       <section className="relative min-h-[50vh] flex items-center bg-[var(--color-dark-section-deep)] overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-dark-section-deep)] via-[#1E1B55] to-[var(--color-brand)]" />
+        <img src="/CareerGuide Images/thisisengineering-omrpeqLz6Po-unsplash.jpg" alt="" aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover opacity-20" style={{ mixBlendMode: 'overlay' }} />
         <div className="absolute inset-0 dot-grid" />
         <div className="absolute top-[-20%] right-[-10%] w-[500px] h-[500px] rounded-full opacity-15 animate-pulse-glow"
           style={{ background: 'radial-gradient(ellipse, #2DCFC1 0%, transparent 65%)' }} />

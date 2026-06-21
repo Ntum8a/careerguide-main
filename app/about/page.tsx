@@ -56,8 +56,8 @@ export default function AboutPage() {
                 </blockquote>
               </div>
             </div>
-            <div className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-2xl h-80 flex items-center justify-center shadow-card">
-              <p className="text-[var(--color-muted)] text-sm">Founder photo coming soon</p>
+            <div className="rounded-2xl overflow-hidden shadow-card h-80">
+              <img src="/Jerome.jpeg" alt="Jerome Ntumba, Founder of CareerGuide" className="w-full h-full object-cover object-top" />
             </div>
           </div>
         </div>

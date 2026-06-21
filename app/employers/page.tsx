@@ -18,6 +18,8 @@ export default function EmployersPage() {
     <>
       <section className="relative min-h-[50vh] flex items-center bg-[var(--color-dark-section-deep)] overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#0F1535] via-[var(--color-dark-section-deep)] to-[#1A1840]" />
+        <img src="/CareerGuide Images/pexels-seven11nash-380769.jpg" alt="" aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover opacity-20" style={{ mixBlendMode: 'overlay' }} />
         <div className="absolute inset-0 dot-grid" />
         <div className="absolute top-[-20%] right-[-10%] w-[500px] h-[500px] rounded-full opacity-15 animate-pulse-glow"
           style={{ background: 'radial-gradient(ellipse, #60E8DC 0%, transparent 65%)' }} />
