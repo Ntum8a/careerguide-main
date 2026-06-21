@@ -31,9 +31,9 @@ const programmes = [
     accent: 'var(--color-accent)',
   },
   {
-    name: 'CareerEarn',
-    desc: 'Structured pathways to apprenticeships, part-time roles and entry-level opportunities. We guide students to opportunities they can apply for and win.',
-    href: '/students',
+    name: 'CareerLearn',
+    desc: 'Free resources, guides and hidden opportunities — all in one place. Everything students need to build skills, find opportunities and get ahead.',
+    href: 'https://resources.careerguide.network',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
         <path d="M12 2L8.5 8.5 2 9.27l5 4.87-1.18 6.88L12 17.77l6.18 3.25L17 14.14l5-4.87-6.5-.77L12 2z" />
