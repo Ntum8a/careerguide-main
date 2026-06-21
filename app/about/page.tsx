@@ -56,8 +56,8 @@ export default function AboutPage() {
                 </blockquote>
               </div>
             </div>
-            <div className="rounded-2xl overflow-hidden shadow-card h-80">
-              <img src="/Jerome.jpeg" alt="Jerome Ntumba, Founder of CareerGuide" className="w-full h-full object-cover object-top" />
+            <div className="flex justify-center md:justify-start">
+              <img src="/Jerome.jpeg" alt="Jerome Ntumba, Founder of CareerGuide" className="rounded-2xl shadow-card max-w-xs w-full" />
             </div>
           </div>
         </div>
