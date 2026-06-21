@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import NewsletterSignup from '@/components/NewsletterSignup'
 
 const programmes = [
   {
@@ -321,6 +322,8 @@ export default function HomePage() {
           </Link>
         </div>
       </section>
+
+      <NewsletterSignup />
     </>
   )
 }
