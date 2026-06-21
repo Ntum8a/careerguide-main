@@ -167,7 +167,7 @@ export default function HomePage() {
               style={{ background: `linear-gradient(to right, transparent, ${a.accentColor}, transparent)` }} />
 
             <div className="relative">
-              <h2 className="text-2xl font-extrabold uppercase tracking-tight mb-3 group-hover:text-white transition-colors">{a.label}</h2>
+              <h2 className="text-2xl font-extrabold uppercase tracking-tight mb-3 text-white/70 group-hover:text-white transition-colors">{a.label}</h2>
               <p className="text-white/60 text-sm leading-relaxed mb-7 group-hover:text-white/75 transition-colors">{a.desc}</p>
               <span className="inline-flex items-center gap-2 text-sm font-semibold transition-all duration-200"
                 style={{ color: a.accentColor }}>
