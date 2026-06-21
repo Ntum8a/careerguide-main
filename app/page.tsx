@@ -220,21 +220,19 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Social proof placeholder */}
+      {/* Partners */}
       <section className="bg-[var(--color-surface)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
           <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-brand)] mb-3">Trusted By</p>
-          <h2 className="text-2xl font-extrabold uppercase tracking-tight text-[var(--color-body)] mb-10">Schools, Employers &amp; Partners</h2>
-          <div className="flex flex-wrap justify-center gap-4 items-center">
-            {['New City College Group', 'Circl', 'Partner', 'Partner', 'Partner'].map((name, i) => (
-              <div key={i} className="h-12 px-6 bg-white border border-[var(--color-border)] rounded-xl flex items-center justify-center text-sm font-semibold text-[var(--color-muted)] shadow-card">
-                {name}
-              </div>
-            ))}
+          <h2 className="text-2xl font-extrabold uppercase tracking-tight text-[var(--color-body)] mb-10">Our Partners</h2>
+          <div className="flex flex-wrap justify-center gap-8 items-center">
+            <div className="h-16 px-8 bg-white border border-[var(--color-border)] rounded-2xl flex items-center justify-center shadow-card">
+              <img src="/CareerGuide Images/New-City-College-Aramark.jpg" alt="New City College" className="h-9 w-auto object-contain" />
+            </div>
+            <div className="h-16 px-8 bg-white border border-[var(--color-border)] rounded-2xl flex items-center justify-center shadow-card">
+              <img src="/Circl Brand Pack/Circl Logo PNG/Circl Logo – Blue.png" alt="Circl" className="h-8 w-auto object-contain" />
+            </div>
           </div>
-          <p className="text-xs text-[var(--color-muted)] mt-8">
-            Partner logos coming soon — <Link href="/contact" className="text-[var(--color-brand)] hover:underline font-semibold">get in touch</Link>
-          </p>
         </div>
       </section>
 
