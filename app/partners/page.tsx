@@ -17,32 +17,41 @@ export default function PartnersPage() {
   return (
     <>
       <section className="relative min-h-[50vh] flex items-center bg-[var(--color-dark-section-deep)] overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-dark-section-deep)] via-[var(--color-dark-section)] to-[var(--color-brand)] opacity-90" />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
-          <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-white/10 text-[var(--color-accent)] mb-6 uppercase tracking-widest">
+        <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-dark-section-deep)] via-[#1A1840] to-[#2D2A6B]" />
+        <div className="absolute inset-0 dot-grid" />
+        <div className="absolute top-[-20%] right-[-10%] w-[500px] h-[500px] rounded-full opacity-15 animate-pulse-glow"
+          style={{ background: 'radial-gradient(ellipse, #C8B8F5 0%, transparent 65%)' }} />
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 w-full">
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold bg-white/8 border border-white/12 text-[var(--color-brand-light)] mb-7 uppercase tracking-widest">
+            <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-brand-light)]" />
             Partners
           </span>
-          <h1 className="text-4xl md:text-6xl font-extrabold uppercase tracking-tight text-white mb-5 max-w-2xl">
-            Join the <span className="text-[var(--color-accent)]">CareerHub network</span>
+          <h1 className="text-4xl md:text-6xl font-extrabold uppercase tracking-tight text-white mb-5 max-w-2xl leading-[0.95]">
+            Join the{' '}
+            <span style={{ background: 'linear-gradient(135deg, #C8B8F5, #7A6AE8)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              CareerHub network
+            </span>
           </h1>
-          <p className="text-white/70 text-lg max-w-xl mb-8">
+          <p className="text-white/65 text-lg max-w-xl mb-9 leading-relaxed">
             We partner with organisations that share our belief that every young person deserves access to career opportunities — regardless of background.
           </p>
           <Link href="/contact"
-            className="inline-flex items-center px-8 py-4 bg-[var(--color-accent)] text-[var(--color-dark-section-deep)] font-bold rounded-full hover:opacity-90 transition-opacity text-sm uppercase tracking-wide">
+            className="inline-flex items-center px-8 py-4 bg-[var(--color-accent)] text-[var(--color-dark-section-deep)] font-bold rounded-full hover:bg-[var(--color-accent-dark)] hover:scale-105 hover:shadow-glow transition-all duration-200 text-sm uppercase tracking-wide">
             Enquire About Partnership
           </Link>
         </div>
       </section>
 
       <section className="bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-brand)] mb-2">Who We Partner With</p>
           <h2 className="text-3xl font-extrabold uppercase tracking-tight text-[var(--color-body)] mb-10">Partnership types</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {partnerTypes.map((p) => (
-              <div key={p.title} className="border border-[var(--color-border)] rounded-2xl p-8">
-                <h3 className="font-extrabold text-[var(--color-body)] uppercase tracking-tight mb-3">{p.title}</h3>
+              <div key={p.title} className="border border-[var(--color-border)] rounded-2xl p-8 shadow-card hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-300 relative overflow-hidden group">
+                <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-[var(--color-brand-light)] to-[var(--color-violet)] rounded-l-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <h3 className="font-extrabold text-[var(--color-body)] uppercase tracking-tight mb-3 group-hover:text-[var(--color-brand)] transition-colors duration-200">{p.title}</h3>
                 <p className="text-sm text-[var(--color-muted)] leading-relaxed">{p.desc}</p>
               </div>
             ))}
@@ -51,13 +60,13 @@ export default function PartnersPage() {
       </section>
 
       {/* Current partners placeholder */}
-      <section className="bg-[var(--color-surface)] border-y border-[var(--color-border)]">
+      <section className="bg-[var(--color-surface)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
           <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-brand)] mb-3">Current Partners</p>
           <h2 className="text-2xl font-extrabold uppercase tracking-tight text-[var(--color-body)] mb-10">Organisations we work with</h2>
-          <div className="flex flex-wrap justify-center gap-6 items-center opacity-50">
+          <div className="flex flex-wrap justify-center gap-4 items-center">
             {['New City College Group', 'Circl', 'Partner', 'Partner'].map((name, i) => (
-              <div key={i} className="h-12 px-6 bg-[var(--color-border)] rounded-lg flex items-center justify-center text-sm font-semibold text-[var(--color-muted)]">
+              <div key={i} className="h-12 px-6 bg-white border border-[var(--color-border)] rounded-xl flex items-center justify-center text-sm font-semibold text-[var(--color-muted)] shadow-card">
                 {name}
               </div>
             ))}
@@ -66,12 +75,16 @@ export default function PartnersPage() {
         </div>
       </section>
 
-      <section className="bg-[var(--color-dark-section)]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+      <section className="bg-[var(--color-dark-section)] relative overflow-hidden">
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div className="w-[500px] h-[200px] rounded-full opacity-15 animate-pulse-glow"
+            style={{ background: 'radial-gradient(ellipse, #C8B8F5 0%, transparent 65%)' }} />
+        </div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
           <h2 className="text-2xl font-extrabold uppercase tracking-tight text-white mb-4">Interested in partnering with us?</h2>
-          <p className="text-white/60 mb-8 max-w-md mx-auto">Tell us a bit about your organisation and what you are trying to achieve. We will find the right way to work together.</p>
+          <p className="text-white/60 mb-9 max-w-md mx-auto leading-relaxed">Tell us a bit about your organisation and what you are trying to achieve. We will find the right way to work together.</p>
           <Link href="/contact"
-            className="inline-flex items-center px-8 py-4 bg-[var(--color-accent)] text-[var(--color-dark-section-deep)] font-bold rounded-full hover:opacity-90 transition-opacity text-sm uppercase tracking-wide">
+            className="inline-flex items-center px-8 py-4 bg-[var(--color-accent)] text-[var(--color-dark-section-deep)] font-bold rounded-full hover:bg-[var(--color-accent-dark)] hover:scale-105 hover:shadow-glow transition-all duration-200 text-sm uppercase tracking-wide">
             Start a Conversation
           </Link>
         </div>
