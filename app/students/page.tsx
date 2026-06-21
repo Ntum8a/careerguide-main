@@ -86,16 +86,17 @@ export default function StudentsPage() {
               </span>
               <img src="/Circl Brand Pack/Circl Logo PNG/Circl Logo – White.png" alt="Circl" className="h-9 w-auto mb-6" />
               <h2 className="text-3xl md:text-4xl font-extrabold uppercase tracking-tight text-white mb-5 leading-tight">
-                Leader as Coach — Free leadership qualification alongside eBay, Rolls Royce &amp; Zurich professionals
+                Leader as Coach — a free, fully funded leadership qualification
               </h2>
-              <p className="text-white/65 leading-relaxed mb-4">
-                A <span className="text-white font-semibold">fully funded leadership qualification</span> for 18–24-year-olds from under-represented backgrounds. Gain professional coaching skills over 12 weeks (1–2 hrs/week on Zoom) — completely free. Next intakes: July &amp; September 2026.
+              <p className="text-white/65 leading-relaxed mb-6">
+                Circl&apos;s <span className="text-white font-semibold">Leader as Coach</span> programme gives 18–24-year-olds from under-represented backgrounds the chance to gain a professional leadership qualification — completely free. Next intakes: <span className="text-white font-semibold">July &amp; September 2026.</span>
               </p>
-              <ul className="space-y-2.5 mb-8">
+              <ul className="space-y-3 mb-8">
                 {[
-                  'Fully funded — no cost to you',
-                  'Gain a professional leadership qualification',
-                  'Alongside professionals from eBay, Trustpilot, Rolls Royce & Zurich',
+                  'A fully funded opportunity to gain a professional leadership qualification',
+                  'Learn key coaching skills, transferable to any future professional setting',
+                  'For 18–24-year-olds from under-represented backgrounds',
+                  'Learn alongside professionals from eBay, Trustpilot, Rolls Royce and Zurich',
                   '12 weeks, 1–2 hours per week over Zoom',
                 ].map((point) => (
                   <li key={point} className="flex items-start gap-2.5 text-sm text-white/75">
