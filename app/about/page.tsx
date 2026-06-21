@@ -38,27 +38,45 @@ export default function AboutPage() {
       </section>
 
       {/* Founder */}
-      <section className="bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+      <section className="bg-[var(--color-dark-section)] relative overflow-hidden">
+        <div className="absolute inset-0 dot-grid" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div>
-              <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-brand)] mb-3">Our Founder</p>
-              <h2 className="text-3xl font-extrabold uppercase tracking-tight text-[var(--color-body)] mb-6">Jerome Ntumba</h2>
-              <div className="space-y-5 text-[var(--color-muted)] leading-relaxed">
+
+            {/* Photo */}
+            <div className="flex justify-center md:justify-end order-first md:order-last">
+              <div className="relative">
+                <div className="absolute -inset-1 rounded-3xl bg-gradient-to-br from-[var(--color-accent)]/40 to-[var(--color-brand)]/30 blur-xl opacity-60" />
+                <div className="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl w-72 md:w-80">
+                  <img
+                    src="/Jerome.jpeg"
+                    alt="Jerome Ntumba, Founder of CareerGuide"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                <div className="absolute -bottom-4 -left-4 px-4 py-2 bg-[var(--color-accent)] rounded-full text-[var(--color-dark-section-deep)] text-xs font-bold uppercase tracking-widest shadow-lg">
+                  Founder & Director
+                </div>
+              </div>
+            </div>
+
+            {/* Text */}
+            <div className="order-last md:order-first">
+              <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-accent)] mb-3">Our Founder</p>
+              <h2 className="text-4xl font-extrabold uppercase tracking-tight text-white mb-6">Jerome Ntumba</h2>
+              <div className="space-y-5 text-white/60 leading-relaxed">
                 <p>
                   Jerome founded CareerGuide after seeing firsthand how differently young people from different backgrounds are prepared for the world of work — and how much of that gap comes down to information, access and confidence rather than ability.
                 </p>
                 <p>
                   CareerGuide is his answer to that gap: a practical, no-nonsense approach to employability that works for young people from any background, in partnership with the schools and employers who care about closing it.
                 </p>
-                <blockquote className="border-l-2 border-[var(--color-accent)] pl-5 italic text-[var(--color-body)] font-medium py-1">
+                <blockquote className="border-l-2 border-[var(--color-accent)] pl-5 italic text-white font-medium py-1">
                   &ldquo;Every young person I have ever worked with has had potential. What they often lack is the knowledge and connections that some people are born into. We are here to change that.&rdquo;
                 </blockquote>
               </div>
             </div>
-            <div className="flex justify-center md:justify-start">
-              <img src="/Jerome.jpeg" alt="Jerome Ntumba, Founder of CareerGuide" className="rounded-2xl shadow-card max-w-xs w-full" />
-            </div>
+
           </div>
         </div>
       </section>
