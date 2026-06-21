@@ -17,15 +17,11 @@ export default function ContactForm() {
     const data = Object.fromEntries(new FormData(form))
     const { firstName, lastName, email, enquiry } = data as Record<string, string>
 
-    const tag = enquiry === 'school' ? 'School' :
-                enquiry === 'employer' ? 'Employer' :
-                enquiry === 'partner' ? 'Partner' : 'Student'
-
     try {
-      const res = await fetch('/api/subscribe', {
+      const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, firstName, lastName, tags: [tag, 'Contact Form'] }),
+        body: JSON.stringify({ firstName, lastName, email, enquiry, message: data.message }),
       })
       if (!res.ok) {
         const body = await res.json()
