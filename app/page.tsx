@@ -87,7 +87,7 @@ const audiences = [
 ]
 
 const stats = [
-  { value: '14–24', label: 'Age group served' },
+  { value: '16–22', label: 'Age group served' },
   { value: '4', label: 'Core programmes' },
   { value: '£0', label: 'Cost to students' },
   { value: 'London', label: 'Based & growing' },

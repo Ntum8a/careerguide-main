@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Free Career Resources',
-  description: 'Free CV guides, interview prep, AI tools and hidden opportunities for young people aged 14–24. No paywalls, no sign-up required.',
+  description: 'Free CV guides, interview prep, AI tools and hidden opportunities for young people aged 16–22. No paywalls, no sign-up required.',
 }
 
 const downloads = [
@@ -83,7 +83,7 @@ export default function ResourcesPage() {
             Everything you need to <span className="text-gradient-accent">compete</span>
           </h1>
           <p className="text-white/65 text-lg max-w-xl mb-9 leading-relaxed">
-            CV guides, interview prep, AI tools and hidden opportunities — all free, all practical, all built for young people aged 14–24.
+            CV guides, interview prep, AI tools and hidden opportunities — all free, all practical, all built for young people aged 16–22.
           </p>
           <div className="flex gap-3 flex-wrap">
             <a href="https://resources.careerguide.network" target="_blank" rel="noopener noreferrer"

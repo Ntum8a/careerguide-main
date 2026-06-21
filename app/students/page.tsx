@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Students',
-  description: 'Free career resources, opportunities and programmes for young people aged 14–24.',
+  description: 'Free career resources, opportunities and programmes for young people aged 16–22.',
 }
 
 const resources = [
