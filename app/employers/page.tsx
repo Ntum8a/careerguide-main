@@ -67,10 +67,10 @@ export default function EmployersPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
           <h2 className="text-2xl font-extrabold uppercase tracking-tight text-white mb-4">Let us build a partnership around your goals</h2>
           <p className="text-white/60 mb-9 max-w-md mx-auto leading-relaxed">Every employer partnership is different. Book a call and we will find the right fit.</p>
-          <Link href="/contact"
+          <a href="https://calendly.com/hello-careerguide/30min" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center px-8 py-4 bg-[var(--color-accent)] text-[var(--color-dark-section-deep)] font-bold rounded-full hover:bg-[var(--color-accent-dark)] hover:scale-105 hover:shadow-glow transition-all duration-200 text-sm uppercase tracking-wide">
             Book a Discovery Call
-          </Link>
+          </a>
         </div>
       </section>
     </>

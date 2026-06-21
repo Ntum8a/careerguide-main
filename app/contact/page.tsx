@@ -48,7 +48,7 @@ export default function ContactPage() {
               <div className="border border-[var(--color-border)] rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-all duration-300">
                 <h3 className="text-xs font-bold uppercase tracking-widest text-[var(--color-brand)] mb-3">Book a Call</h3>
                 <p className="text-[var(--color-muted)] text-sm mb-5 leading-relaxed">Prefer to talk? Book a 30-minute discovery call directly into our calendar.</p>
-                <a href="#calendly-placeholder"
+                <a href="https://calendly.com/hello-careerguide/30min" target="_blank" rel="noopener noreferrer"
                   className="inline-flex items-center px-6 py-3 bg-[var(--color-brand)] text-white font-bold rounded-full hover:bg-[var(--color-brand-hover)] hover:scale-105 transition-all duration-200 text-sm uppercase tracking-wide">
                   Book a Discovery Call
                 </a>
