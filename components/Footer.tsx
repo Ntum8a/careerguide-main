@@ -8,8 +8,11 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 relative">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div className="md:col-span-2">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo-white.png" alt="CareerGuide" className="h-8 w-auto mb-4" />
+            <div className="flex items-center gap-2.5 mb-4">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/logo-icon.png" alt="" aria-hidden="true" className="h-8 w-8" />
+              <span className="text-white font-extrabold text-xl tracking-tight">CareerGuide</span>
+            </div>
             <p className="text-white/50 text-sm leading-relaxed max-w-xs">
               Preparing young people for the world of work through mentorship, work experience and real-world skills — in partnership with schools, colleges and employers.
             </p>

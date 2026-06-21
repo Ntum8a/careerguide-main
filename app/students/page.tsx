@@ -96,6 +96,28 @@ export default function StudentsPage() {
         </div>
       </section>
 
+      {/* Social follow */}
+      <section className="bg-[var(--color-dark-section-deep)]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+          <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-accent)] mb-3">Stay Connected</p>
+          <h2 className="text-2xl font-extrabold uppercase tracking-tight text-white mb-3">Follow for daily career tips &amp; hidden opportunities</h2>
+          <p className="text-white/55 mb-9 max-w-md mx-auto text-sm leading-relaxed">We share free career advice, job leads, and behind-the-scenes content every day across our socials.</p>
+          <div className="flex flex-wrap justify-center gap-4">
+            {[
+              { label: 'Instagram', handle: '@careerguideuk', href: 'https://www.instagram.com/careerguideuk' },
+              { label: 'TikTok', handle: '@careerguidenetwork', href: 'https://www.tiktok.com/@careerguidenetwork' },
+              { label: 'LinkedIn', handle: 'CareerGuide Network', href: 'https://www.linkedin.com/company/careerguidenetwork/' },
+            ].map((s) => (
+              <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer"
+                className="group flex items-center gap-3 px-6 py-3 bg-white/6 border border-white/12 rounded-full hover:bg-[var(--color-accent)] hover:border-transparent transition-all duration-200">
+                <span className="font-bold text-sm text-white">{s.label}</span>
+                <span className="text-white/50 text-xs group-hover:text-white/80 transition-colors">{s.handle}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-[var(--color-dark-section)] relative overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <div className="w-[500px] h-[200px] rounded-full opacity-15 animate-pulse-glow"

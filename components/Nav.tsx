@@ -59,8 +59,7 @@ export default function Nav() {
 
           <div className="hidden lg:flex items-center gap-3">
             <Link
-              href="https://resources.careerguide.network"
-              target="_blank"
+              href="/resources"
               className="text-sm font-medium text-[var(--color-accent)] hover:text-white transition-colors duration-200"
             >
               Free Resources
@@ -105,12 +104,11 @@ export default function Nav() {
               </Link>
             ))}
             <Link
-              href="https://resources.careerguide.network"
-              target="_blank"
+              href="/resources"
               onClick={() => setOpen(false)}
               className="block px-3 py-2.5 text-sm font-medium text-[var(--color-accent)] mb-1"
             >
-              Free Resources ↗
+              Free Resources
             </Link>
             <Link
               href="/contact"

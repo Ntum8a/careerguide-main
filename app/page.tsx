@@ -255,9 +255,9 @@ export default function HomePage() {
               <p className="text-white/65 leading-relaxed mb-8">
                 Our resource library gives every young person access to the tools and information that too many never get. No paywalls. No sign-up required.
               </p>
-              <Link href="https://resources.careerguide.network" target="_blank"
+              <Link href="/resources"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-[var(--color-accent)] text-[var(--color-dark-section-deep)] font-bold rounded-full hover:bg-[var(--color-accent-dark)] hover:scale-105 hover:shadow-glow transition-all duration-200 text-sm uppercase tracking-wide">
-                Visit Resource Library →
+                Browse Free Resources →
               </Link>
             </div>
             <div className="grid grid-cols-2 gap-3">
@@ -273,6 +273,31 @@ export default function HomePage() {
                   <span className="text-base">{r.icon}</span>
                   {r.label}
                 </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Social follow */}
+      <section className="bg-[var(--color-dark-section-deep)]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-accent)] mb-2">Stay in the Loop</p>
+              <h2 className="text-2xl font-extrabold uppercase tracking-tight text-white">Follow us for career tips &amp; opportunities</h2>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              {[
+                { label: 'Instagram', handle: '@careerguideuk', href: 'https://www.instagram.com/careerguideuk' },
+                { label: 'TikTok', handle: '@careerguidenetwork', href: 'https://www.tiktok.com/@careerguidenetwork' },
+                { label: 'LinkedIn', handle: 'CareerGuide', href: 'https://www.linkedin.com/company/careerguidenetwork/' },
+              ].map((s) => (
+                <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer"
+                  className="group flex items-center gap-2.5 px-5 py-2.5 bg-white/6 border border-white/12 rounded-full hover:bg-[var(--color-accent)] hover:border-transparent transition-all duration-200">
+                  <span className="font-bold text-sm text-white">{s.label}</span>
+                  <span className="text-white/45 text-xs group-hover:text-white/80 transition-colors hidden sm:block">{s.handle}</span>
+                </a>
               ))}
             </div>
           </div>
