@@ -72,6 +72,53 @@ export default function StudentsPage() {
         </div>
       </section>
 
+      {/* Circl featured partner */}
+      <section className="relative bg-[#1A1F6E] overflow-hidden">
+        <div className="absolute inset-0 dot-grid opacity-40" />
+        <div className="absolute top-[-20%] right-[-10%] w-[500px] h-[500px] rounded-full opacity-20 animate-pulse-glow"
+          style={{ background: 'radial-gradient(ellipse, #3B5BFF 0%, transparent 65%)' }} />
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div>
+              <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-bold bg-white/10 border border-white/15 text-white/80 uppercase tracking-widest mb-6">
+                ★ Featured Opportunity
+              </span>
+              <img src="/Circl Brand Pack/Circl Logo PNG/Circl Logo – White.png" alt="Circl" className="h-9 w-auto mb-6" />
+              <h2 className="text-3xl md:text-4xl font-extrabold uppercase tracking-tight text-white mb-5 leading-tight">
+                Free leadership coaching — alongside Google, McKinsey &amp; Meta professionals
+              </h2>
+              <p className="text-white/65 leading-relaxed mb-4">
+                Circl offers a <span className="text-white font-semibold">fully-funded leadership programme</span> accredited by the Association for Coaching. You will be coached alongside professionals from some of the world&apos;s leading organisations — completely free.
+              </p>
+              <ul className="space-y-2.5 mb-8">
+                {[
+                  'Fully funded — no cost to you',
+                  'Accredited by the Association for Coaching',
+                  'Alongside professionals from Google, Meta, McKinsey & more',
+                  'Build leadership skills that employers actually want',
+                ].map((point) => (
+                  <li key={point} className="flex items-start gap-2.5 text-sm text-white/75">
+                    <span className="text-[#4BFFBB] mt-0.5 shrink-0">✓</span>
+                    {point}
+                  </li>
+                ))}
+              </ul>
+              <a href="https://www.circl.org" target="_blank" rel="noopener noreferrer"
+                className="inline-flex items-center px-8 py-4 bg-white text-[#1A1F6E] font-bold rounded-full hover:bg-[#4BFFBB] transition-all duration-200 hover:scale-105 text-sm uppercase tracking-wide">
+                Apply to Circl →
+              </a>
+            </div>
+            <div className="relative">
+              <div className="rounded-2xl overflow-hidden shadow-card">
+                <img src="/CareerGuide Images/Circl Programme Flyer.png" alt="Circl leadership programme"
+                  className="w-full h-auto" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-[var(--color-dark-section-deep)] relative overflow-hidden">
         <div className="absolute inset-0 dot-grid" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">

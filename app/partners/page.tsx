@@ -71,7 +71,7 @@ export default function PartnersPage() {
               <img src="/CareerGuide Images/New-City-College-Aramark.jpg" alt="New City College" className="h-8 w-auto object-contain" />
             </div>
             <div className="h-14 px-6 bg-white border border-[var(--color-border)] rounded-xl flex items-center justify-center shadow-card overflow-hidden">
-              <img src="/CareerGuide Images/Circl Programme Flyer.png" alt="Circl" className="h-10 w-auto object-contain" />
+              <img src="/Circl Brand Pack/Circl Logo PNG/Circl Logo – Blue.png" alt="Circl" className="h-7 w-auto object-contain" />
             </div>
           </div>
         </div>
