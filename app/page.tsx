@@ -222,18 +222,23 @@ export default function HomePage() {
       </section>
 
       {/* Partners */}
-      <section className="bg-[var(--color-surface)]">
+      <section className="bg-[var(--color-dark-section-deep)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
-          <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-brand)] mb-3">Trusted By</p>
-          <h2 className="text-2xl font-extrabold uppercase tracking-tight text-[var(--color-body)] mb-10">Our Partners</h2>
-          <div className="flex flex-wrap justify-center gap-8 items-center">
-            <div className="h-16 px-8 bg-white border border-[var(--color-border)] rounded-2xl flex items-center justify-center shadow-card">
+          <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-accent)] mb-3">Trusted By</p>
+          <h2 className="text-2xl font-extrabold uppercase tracking-tight text-white mb-10">Our Partners</h2>
+          <div className="flex flex-wrap justify-center gap-6 items-center mb-10">
+            <div className="h-16 px-8 bg-white rounded-2xl flex items-center justify-center shadow-card">
               <img src="/CareerGuide Images/New-City-College-Aramark.jpg" alt="New City College" className="h-9 w-auto object-contain" />
             </div>
-            <div className="h-16 px-8 bg-white border border-[var(--color-border)] rounded-2xl flex items-center justify-center shadow-card">
-              <img src="/Circl Brand Pack/Circl Logo PNG/Circl Logo – Blue.png" alt="Circl" className="h-8 w-auto object-contain" />
+            <div className="h-16 px-8 bg-white rounded-2xl flex items-center justify-center shadow-card">
+              <img src="/Circl Brand Pack/Circl Logo PNG/Circl Logo – Black.png" alt="Circl" className="h-8 w-auto object-contain" />
             </div>
           </div>
+          <p className="text-white/45 text-sm mb-4">Want to join our partner network?</p>
+          <a href="/partners"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/20 text-white/70 hover:text-white hover:border-[var(--color-accent)] text-sm font-semibold transition-all duration-200 uppercase tracking-wide">
+            Become a Partner →
+          </a>
         </div>
       </section>
 
