@@ -86,17 +86,17 @@ export default function StudentsPage() {
               </span>
               <img src="/Circl Brand Pack/Circl Logo PNG/Circl Logo – White.png" alt="Circl" className="h-9 w-auto mb-6" />
               <h2 className="text-3xl md:text-4xl font-extrabold uppercase tracking-tight text-white mb-5 leading-tight">
-                Free leadership coaching — alongside Google, McKinsey &amp; Meta professionals
+                Leader as Coach — Free leadership qualification alongside eBay, Rolls Royce &amp; Zurich professionals
               </h2>
               <p className="text-white/65 leading-relaxed mb-4">
-                Circl offers a <span className="text-white font-semibold">fully-funded leadership programme</span> accredited by the Association for Coaching. You will be coached alongside professionals from some of the world&apos;s leading organisations — completely free.
+                A <span className="text-white font-semibold">fully funded leadership qualification</span> for 18–24-year-olds from under-represented backgrounds. Gain professional coaching skills over 12 weeks (1–2 hrs/week on Zoom) — completely free. Next intakes: July &amp; September 2026.
               </p>
               <ul className="space-y-2.5 mb-8">
                 {[
                   'Fully funded — no cost to you',
-                  'Accredited by the Association for Coaching',
-                  'Alongside professionals from Google, Meta, McKinsey & more',
-                  'Build leadership skills that employers actually want',
+                  'Gain a professional leadership qualification',
+                  'Alongside professionals from eBay, Trustpilot, Rolls Royce & Zurich',
+                  '12 weeks, 1–2 hours per week over Zoom',
                 ].map((point) => (
                   <li key={point} className="flex items-start gap-2.5 text-sm text-white/75">
                     <span className="text-[#4BFFBB] mt-0.5 shrink-0">✓</span>
@@ -104,7 +104,7 @@ export default function StudentsPage() {
                   </li>
                 ))}
               </ul>
-              <a href="https://www.circl.org" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.tfaforms.com/4894592?tfa_850=001P200000ml7nE" target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center px-8 py-4 bg-white text-[#1A1F6E] font-bold rounded-full hover:bg-[#4BFFBB] transition-all duration-200 hover:scale-105 text-sm uppercase tracking-wide">
                 Apply to Circl →
               </a>
