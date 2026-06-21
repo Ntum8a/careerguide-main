@@ -11,8 +11,10 @@ function loadGA() {
   s.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`
   s.async = true
   document.head.appendChild(s)
-  window.dataLayer = window.dataLayer || []
-  function gtag(...args: unknown[]) { window.dataLayer.push(args) }
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const w = window as any
+  w.dataLayer = w.dataLayer || []
+  function gtag(...args: unknown[]) { w.dataLayer.push(args) }
   gtag('js', new Date())
   gtag('config', GA_ID)
 }
