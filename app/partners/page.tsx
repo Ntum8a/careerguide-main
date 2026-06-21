@@ -45,32 +45,33 @@ export default function PartnersPage() {
         </div>
       </section>
 
-      <section className="bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-brand)] mb-2">Who We Partner With</p>
-          <h2 className="text-3xl font-extrabold uppercase tracking-tight text-[var(--color-body)] mb-10">Partnership types</h2>
+      <section className="bg-[var(--color-dark-section)] relative overflow-hidden">
+        <div className="absolute inset-0 dot-grid" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+          <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-accent)] mb-2">Who We Partner With</p>
+          <h2 className="text-3xl font-extrabold uppercase tracking-tight text-white mb-10">Partnership types</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {partnerTypes.map((p) => (
-              <div key={p.title} className="border border-[var(--color-border)] rounded-2xl p-8 shadow-card hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-300 relative overflow-hidden group">
-                <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-[var(--color-brand-light)] to-[var(--color-violet)] rounded-l-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <h3 className="font-extrabold text-[var(--color-body)] uppercase tracking-tight mb-3 group-hover:text-[var(--color-brand)] transition-colors duration-200">{p.title}</h3>
-                <p className="text-sm text-[var(--color-muted)] leading-relaxed">{p.desc}</p>
+              <div key={p.title} className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/8 hover:border-[var(--color-accent)]/30 hover:-translate-y-0.5 transition-all duration-300 relative overflow-hidden group">
+                <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-[var(--color-accent)] to-[var(--color-brand)] rounded-l-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <h3 className="font-extrabold text-white uppercase tracking-tight mb-3 group-hover:text-[var(--color-accent)] transition-colors duration-200">{p.title}</h3>
+                <p className="text-sm text-white/55 leading-relaxed">{p.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Current partners placeholder */}
-      <section className="bg-[var(--color-surface)]">
+      {/* Current partners */}
+      <section className="bg-[var(--color-dark-section-deep)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
-          <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-brand)] mb-3">Current Partners</p>
-          <h2 className="text-2xl font-extrabold uppercase tracking-tight text-[var(--color-body)] mb-10">Organisations we work with</h2>
+          <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-accent)] mb-3">Current Partners</p>
+          <h2 className="text-2xl font-extrabold uppercase tracking-tight text-white mb-10">Organisations we work with</h2>
           <div className="flex flex-wrap justify-center gap-6 items-center">
-            <div className="h-14 px-8 bg-white border border-[var(--color-border)] rounded-xl flex items-center justify-center shadow-card">
+            <div className="h-16 px-8 bg-white/8 border border-white/10 rounded-2xl flex items-center justify-center hover:bg-white/12 hover:border-white/20 transition-all duration-300">
               <img src="/CareerGuide Images/New-City-College-Aramark.jpg" alt="New City College" className="h-8 w-auto object-contain" />
             </div>
-            <div className="h-14 px-6 bg-white border border-[var(--color-border)] rounded-xl flex items-center justify-center shadow-card overflow-hidden">
+            <div className="h-16 px-8 bg-white/8 border border-white/10 rounded-2xl flex items-center justify-center hover:bg-white/12 hover:border-white/20 transition-all duration-300 overflow-hidden">
               <img src="/Circl Brand Pack/Circl Logo PNG/Circl Logo – Blue.png" alt="Circl" className="h-7 w-auto object-contain" />
             </div>
           </div>
@@ -85,10 +86,10 @@ export default function PartnersPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
           <h2 className="text-2xl font-extrabold uppercase tracking-tight text-white mb-4">Interested in partnering with us?</h2>
           <p className="text-white/60 mb-9 max-w-md mx-auto leading-relaxed">Tell us a bit about your organisation and what you are trying to achieve. We will find the right way to work together.</p>
-          <Link href="/contact"
+          <a href="https://calendly.com/hello-careerguide/30min" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center px-8 py-4 bg-[var(--color-accent)] text-[var(--color-dark-section-deep)] font-bold rounded-full hover:bg-[var(--color-accent-dark)] hover:scale-105 hover:shadow-glow transition-all duration-200 text-sm uppercase tracking-wide">
-            Start a Conversation
-          </Link>
+            Book a Discovery Call
+          </a>
         </div>
       </section>
     </>
