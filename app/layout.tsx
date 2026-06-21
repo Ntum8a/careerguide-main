@@ -19,7 +19,10 @@ export const metadata: Metadata = {
   description: 'Practical employability programmes, work experience opportunities and career resources connecting education with industry across London.',
   metadataBase: new URL('https://www.careerguide.network'),
   icons: {
-    icon: '/logo-icon.png',
+    icon: [
+      { url: '/favicon.ico', sizes: '32x32' },
+      { url: '/logo-icon.png', sizes: '500x500' },
+    ],
     apple: '/logo-icon.png',
   },
   openGraph: {
