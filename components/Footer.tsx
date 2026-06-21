@@ -50,14 +50,19 @@ export default function Footer() {
             <h3 className="text-xs font-bold uppercase tracking-widest text-white/35 mb-4">Resources</h3>
             <ul className="space-y-2.5">
               {[
-                { href: 'https://resources.careerguide.network', label: 'Resource Library' },
-                { href: 'https://resources.careerguide.network/learning-directory', label: 'Learning Directory' },
-                { href: 'https://resources.careerguide.network/hidden-opportunities', label: 'Opportunities' },
-                { href: '/about', label: 'About Us' },
-                { href: '/contact', label: 'Contact' },
+                { href: '/resources', label: 'Resource Library', external: false },
+                { href: 'https://resources.careerguide.network/learning-directory', label: 'Learning Directory', external: true },
+                { href: 'https://resources.careerguide.network/hidden-opportunities', label: 'Opportunities', external: true },
+                { href: '/about', label: 'About Us', external: false },
+                { href: '/contact', label: 'Contact', external: false },
               ].map((l) => (
                 <li key={l.href}>
-                  <Link href={l.href} className="text-white/50 hover:text-white text-sm transition-colors duration-200">{l.label}</Link>
+                  {l.external ? (
+                    <a href={l.href} target="_blank" rel="noopener noreferrer"
+                      className="text-white/50 hover:text-white text-sm transition-colors duration-200">{l.label}</a>
+                  ) : (
+                    <Link href={l.href} className="text-white/50 hover:text-white text-sm transition-colors duration-200">{l.label}</Link>
+                  )}
                 </li>
               ))}
             </ul>
