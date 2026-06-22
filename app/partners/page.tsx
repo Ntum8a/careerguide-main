@@ -69,10 +69,10 @@ export default function PartnersPage() {
           <h2 className="text-2xl font-extrabold uppercase tracking-tight text-white mb-10">Organisations we work with</h2>
           <div className="flex flex-wrap justify-center gap-6 items-center">
             <div className="h-16 px-8 bg-white/8 border border-white/10 rounded-2xl flex items-center justify-center hover:bg-white/12 hover:border-white/20 transition-all duration-300">
-              <img src="/CareerGuide Images/New-City-College-Aramark.jpg" alt="New City College" className="h-8 w-auto object-contain" />
+              <img src="/ncc-logo-white.png" alt="New City College" className="h-8 w-auto object-contain" />
             </div>
             <div className="h-16 px-8 bg-white/8 border border-white/10 rounded-2xl flex items-center justify-center hover:bg-white/12 hover:border-white/20 transition-all duration-300 overflow-hidden">
-              <img src="/circl-logo-blue.png" alt="Circl" className="h-7 w-auto object-contain" />
+              <img src="/circl-logo-white.png" alt="Circl" className="h-7 w-auto object-contain" />
             </div>
           </div>
         </div>

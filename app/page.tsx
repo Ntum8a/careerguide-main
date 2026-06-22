@@ -228,7 +228,7 @@ export default function HomePage() {
           <h2 className="text-2xl font-extrabold uppercase tracking-tight text-white mb-10">Our Partners</h2>
           <div className="flex flex-wrap justify-center gap-6 items-center mb-10">
             <div className="h-16 px-8 bg-white rounded-2xl flex items-center justify-center shadow-card">
-              <img src="/CareerGuide Images/New-City-College-Aramark.jpg" alt="New City College" className="h-9 w-auto object-contain" />
+              <img src="/ncc-logo-black.png" alt="New City College" className="h-9 w-auto object-contain" />
             </div>
             <div className="h-16 px-8 bg-white rounded-2xl flex items-center justify-center shadow-card">
               <img src="/circl-logo-black.png" alt="Circl" className="h-8 w-auto object-contain" />
