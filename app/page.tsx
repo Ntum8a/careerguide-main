@@ -227,11 +227,11 @@ export default function HomePage() {
           <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-accent)] mb-3">Trusted By</p>
           <h2 className="text-2xl font-extrabold uppercase tracking-tight text-white mb-10">Our Partners</h2>
           <div className="flex flex-wrap justify-center gap-6 items-center mb-10">
-            <div className="h-16 px-8 bg-white rounded-2xl flex items-center justify-center shadow-card">
-              <img src="/ncc-logo-black.png" alt="New City College" className="h-9 w-auto object-contain" />
+            <div className="h-16 px-8 bg-white/10 backdrop-blur border border-white/20 rounded-2xl flex items-center justify-center">
+              <img src="/ncc-logo-white-nobg.png" alt="New City College" className="h-8 w-auto object-contain" />
             </div>
-            <div className="h-16 px-8 bg-white rounded-2xl flex items-center justify-center shadow-card">
-              <img src="/circl-logo-black.png" alt="Circl" className="h-8 w-auto object-contain" />
+            <div className="h-16 px-8 bg-white/10 backdrop-blur border border-white/20 rounded-2xl flex items-center justify-center">
+              <img src="/circl-logo-white.png" alt="Circl" className="h-8 w-auto object-contain" />
             </div>
           </div>
           <p className="text-white/45 text-sm mb-4">Want to join our partner network?</p>
