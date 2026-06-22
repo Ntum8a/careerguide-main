@@ -231,7 +231,7 @@ export default function HomePage() {
               <img src="/CareerGuide Images/New-City-College-Aramark.jpg" alt="New City College" className="h-9 w-auto object-contain" />
             </div>
             <div className="h-16 px-8 bg-white rounded-2xl flex items-center justify-center shadow-card">
-              <img src="/Circl Brand Pack/Circl Logo PNG/Circl Logo – Black.png" alt="Circl" className="h-8 w-auto object-contain" />
+              <img src="/circl-logo-black.png" alt="Circl" className="h-8 w-auto object-contain" />
             </div>
           </div>
           <p className="text-white/45 text-sm mb-4">Want to join our partner network?</p>
